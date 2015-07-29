@@ -1,0 +1,603 @@
+/* _________________________________________
+CONTENT:	ProjectName, Stylesheet Purpose
+AUTHOR:		Your Name
+____________________________________________
+
+TABLE OF CONTENTS:
+
+1. imports
+2. html root
+3. typograpy
+4. content
+
+========================================================== */
+
+/* 1. IMPORTS  =========================================== */
+
+
+@import "_variables";
+@import "_utils";
+@import "_ribbons";
+@import url(http://weloveiconfonts.com/api/?family=iconicfill);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+
+/* 2. HTML ROOT  ========================================= */
+
+*{ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+html, body {
+	width: 100%;
+}
+
+body {
+	color: $txt-color1;
+}
+
+/* 3. TYPOGRAPHY  ======================================== */
+
+h1{
+	// @extend .center-text;
+	font-family: $txt-type1;
+	font-weight: $txt-weight-normal;
+	font-size: $txt-size1;
+	margin-top: 0;
+	margin-bottom: 20px !important;
+}
+
+h2{
+	font-family: $txt-type1;
+	font-weight: $txt-weight-normal;
+	font-size: $txt-size2;
+	line-height: $txt-height1;
+	margin: 30px auto 0 auto;
+	text-align: center;
+}
+
+h4{
+	font-family: $txt-type1;
+	font-weight: $txt-weight-normal;
+	font-size: $txt-size5;
+	line-height: $txt-height5;
+}
+
+header p{
+	@extend .center-text;
+	font-family: $txt-type1;
+	font-weight: $txt-weight-normal;
+	font-size: $txt-size4;
+	color: $txt-color2;
+}
+
+a {
+	@extend .center-text;
+	font-family: $txt-type2;
+	font-weight: $txt-weight-bold;
+	font-size: $txt-size10;
+	color: $txt-color1;
+	text-decoration: none;
+}
+
+p {
+	@extend .left;
+	font-family: $txt-type1;
+	font-weight: $txt-weight-normal;
+	font-size: $txt-size7;
+	color: $txt-color1;
+}
+
+.mtv-dash{
+	@extend .center-text;
+	font-family: $txt-type1;
+	font-weight: $txt-weight-normal;
+	font-size: $txt-size7;
+	color: $txt-color2;
+
+	letter-spacing: 3px;
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+
+.h2-ft{
+	margin-top: 20px !important;
+	margin-bottom: 10px;
+}
+
+.ft{
+	@extend .left;
+	font-family: $txt-type1;
+	font-size: $txt-size6;
+	line-height: $txt-height3;
+	font-weight: $txt-weight-normal;
+	margin-bottom: 0
+
+}
+
+.project-h4{
+	@extend .relative;
+	@extend .project-text;
+    color: $txt-color4;
+    margin-bottom: 0;
+}
+
+.projects p {
+	@extend .relative;
+	@extend .project-text;
+	font-size: $txt-size8;
+    line-height: $txt-height3;
+    margin-top: 10px;
+}
+
+.news-h4 {
+    font-size: $txt-size4;
+    line-height: $txt-height4;
+    color: $txt-color5;
+    margin-bottom: 20px;
+}
+
+.news-p{
+    font-size: $txt-size6;
+    line-height: $txt-height3;
+    color: $txt-color1;
+    margin-bottom: 0;
+}
+
+.row2 .news p {
+    text-align: left;
+    font-size: $txt-size7;
+    font-weight: $txt-weight-bold;
+    line-height: $txt-height5;
+    color: $txt-color5;
+    margin-bottom: 20px;
+}
+
+.cta-blank a{	
+    font-size: $txt-size7;
+}
+
+.cta-blank {
+    font-weight: $txt-weight-bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.row2 .cta-ribbon{
+	@extend .relative;	
+}
+
+.blog1 h3{
+	@extend .full-width;
+	@extend .relative;	
+    font-size: $txt-size3;
+    font-weight: $txt-weight-normal;
+    line-height: $txt-height4;
+    color: $txt-color5;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.blog1 p{
+	@extend .relative;
+	margin-bottom: 16px;
+	margin-top: 16px;	
+}
+
+.blog2 p{
+	@extend .relative;
+	font-size: $txt-size8;
+	line-height: $txt-height3;
+	color: $txt-color3;	
+	margin-top: 8px;
+}
+
+.blog-h4{
+    color: $txt-color4;
+    margin-bottom: 0;
+}
+
+.about-p{
+	font-size: $txt-size5;
+	line-height: $txt-height3;
+	margin-bottom: 18px;
+	margin-top: 18px;	
+}
+
+.network-p{
+	@extend .center-text;	
+}
+
+.city {
+    color: $txt-color5;
+    font-size: $txt-size4;
+    line-height: $txt-height2;
+    font-weight: $txt-weight-bold;
+}
+
+.address{
+    color: $txt-color1;
+    font-size: $txt-size9;
+    line-height: $txt-height6;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.name-p{
+    font-size: $txt-size4;
+    line-height: $txt-height7;
+    font-weight: $txt-weight-bold;
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+
+.people {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: $txt-size6;
+    font-weight: $txt-weight-bold;
+    line-height: $txt-height6;
+    color: $txt-color3;
+    margin-top: 22px;
+    letter-spacing: 2px;
+}
+
+/* 4. CONTENT  =========================================== */
+
+.container{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header{
+	@extend .fixed;
+	@extend .full-width;
+	height: 307px;
+	background-color: $bg-color1;
+	z-index: 0;	
+}
+
+.header-section{
+	height: 240px;
+	margin: 35px auto;
+	z-index: 1;
+}
+
+.logo{
+	@extend .img;
+	background-image:$img-logo;
+	width: 165px;
+	height: 213px;
+	left: 25%;	
+}
+
+.icon_star{
+	@extend .img;
+	@extend .star;
+	position: relative;
+	margin: 14px auto;	
+}
+
+.ft-star{
+	margin-top: 0 !important;
+	margin-bottom: 50px !important;		
+}
+
+.cta-ribbon {
+	@include ribbon();
+}
+
+nav{
+	position: relative;
+	@extend .full-width;
+	@extend .center-text;
+	height: 49px;
+	margin-top: 306px;
+	background-color: $bg-color2;
+	display: inline-block;
+  	z-index: 9999;
+	-webkit-transition-delay: 0.6s ease;
+    transition-delay: 0.6s ease;
+
+	ul{
+		@extend .content-width;
+		@extend .center;
+		height: 49px;
+		display: inline-block;	
+	}
+
+	.nav-button{
+		@extend .relative;
+		@extend .reset-list;
+		width: 139px;
+		height: 49px;
+		padding-top: 12px;
+		color: $txt-color2;
+		cursor: pointer;
+		border-left: dashed #5f5f5f 1px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+#nav-top{
+	width: 100px !important;
+	padding-top: 1px !important;
+}
+
+#nav-contact{
+	border-right: dashed #5f5f5f 1px;
+}
+
+nav.sticky{
+	position: fixed;
+	margin-top: 0;
+	margin-bottom: 300px;
+  	z-index: 101;
+}
+
+.container-two{
+	position: relative;	
+	@extend .full-width;
+	@extend .center;
+	height: 6000px;
+    margin-top: -4px;
+	background-color: $bg-color3;
+	z-index: 0;	
+}
+
+.content{
+	position: relative;
+	@extend .content-width;
+	@extend .center;
+	background-color: $bg-color3;
+	height: auto;
+}
+
+section {
+	@extend .relative;
+	width: 100%;
+}
+
+.container-two.down{
+	padding-top: 350px;
+}
+
+
+/* ========  TITLES  ======== */
+
+.title {
+	width: 708px;
+	margin: 30px auto;
+	border-top: dashed 1px #80726b;
+	border-bottom: dashed 1px #80726b;	
+}
+
+.title-p{
+	@extend .center-text;
+	color: $txt-color3;
+	font-size: $txt-size4;
+	line-height: $txt-height2;
+	margin-top: 15px;
+	margin-bottom: 20px;	
+}
+
+
+/* ========  WORK  ======== */
+
+.featured_project {
+	@extend .relative;
+	background-color: $bg-color4;
+	height: 590px;
+	margin-bottom: 30px;
+}
+
+.mtv_logo{
+	@extend .img;
+	background-image:$img-mtv;
+	float: left;
+	width: 322px;
+	height: 214px;
+	left: 50%;
+    margin: 150px 0 0 -161px;
+}
+
+.zappos{
+	@extend .img;
+	@extend .project;
+	background-image:$img-zappos-off;
+	&:hover {
+		background-image:$img-zappos-on;
+	}
+}
+
+.delaware{
+	@extend .img;
+	@extend .project;
+	background-image:$img-delaware-off;
+	&:hover {
+		background-image:$img-delaware-on;
+	}
+}
+
+.monotype{
+	@extend .img;
+	@extend .project;
+	background-image:$img-monotype-off;
+	&:hover {
+		background-image:$img-monotype-on;
+	}
+}
+
+
+/* ========  NEWS  ======== */
+
+.digital-summit{
+	@extend .img;
+	background-image:$img-digital-summit;
+	width: 520px;
+	height: 640px;
+}
+
+.webby-awards{
+	@extend .img;
+	background-image:$img-webby;
+	width: 520px;
+	height: 274px;	
+}
+
+.mijingo{
+	@extend .img;
+	@extend .news-img;
+	background-image:$img-mijingo;
+}
+
+.sxsw{
+	@extend .img;
+	@extend .news-img;
+	background-image:$img-sxsw;	
+}
+
+.wpmc{
+	@extend .img;
+	@extend .news-img;
+	background-image:$img-wpmc;
+}
+
+
+/* ========  BLOG  ======== */
+
+.teach-learn{
+	@extend .img;
+	background-image:$img-teach;
+	width: 396px;
+	height: 304px;	
+}
+
+.recent{
+	text-transform: uppercase;
+	text-align: left;
+	@extend .relative;
+	@extend .content-width;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+.overwriting{
+	@extend .img;
+	@extend .blog-img;
+	background-image:$img-overwriting;
+}
+
+.pencil{
+	@extend .img;
+	@extend .blog-img;
+	background-image:$img-pencil;
+}
+
+.blank-slate{
+	@extend .img;
+	@extend .blog-img;
+	background-image:$img-blank-slate;
+}
+
+
+/* ========  ABOUT  ======== */
+
+.red{
+	@extend .left;
+	font-family: $txt-type1;
+	font-weight: $txt-weight-bold;
+	font-size: $txt-size5;
+	line-height: $txt-height3;
+	color: $txt-color6;
+}
+
+.slogan-about{
+	@extend .img;
+	width: 328px;
+	height: 444px;
+	background-image:$img-slogan;
+}
+
+
+/* ========  NETWORK  ======== */
+
+.list-apart{
+	@extend .img;
+	@extend .network-img;
+	background-image:$img-list;
+}
+
+.event-apart{
+	@extend .img;
+	@extend .network-img;
+	background-image:$img-event;
+}
+
+.book-apart{
+	@extend .img;
+	@extend .network-img;
+	background-image:$img-book;
+}
+
+
+/* ========  CONTACT  ======== */
+
+.nyc{
+	@extend .img;
+	@extend .contact-img;
+	background-image:$img-nyc;
+}
+
+.zz{
+	@extend .img;
+	@extend .contact-img;
+	background-image:$img-zz;
+}
+
+.atlanta{
+	@extend .img;
+	@extend .contact-img;
+	background-image:$img-atl;
+}
+
+
+/* ========  FOOTER  ======== */
+
+.foot1{
+	position: relative;	
+	@extend .full-width;
+	@extend .center;
+	height: 505px;
+	background-color: $bg-color1;
+}
+
+.foot2{
+	position: relative;	
+	@extend .full-width;
+	@extend .center;
+	height: 86px;
+	background-color: $bg-color2;
+}
+
+
+
+
+
+
+
+
+
+

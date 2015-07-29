@@ -1,0 +1,273 @@
+// ===========  UTILITIES  ===========
+
+// VAR
+
+.relative {
+	position: relative;
+	float: left;
+}
+
+.center-text {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.left {
+	margin: 0 auto;
+	text-align: left;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.mtv {
+	width: 430.391px !important;
+	height: 590px;
+	margin: 0 53.797px !important;
+}
+
+
+.border {
+	width: 336px !important;
+	border: solid #e5e7e6 1px;	
+}
+
+.project-text {	
+	width: 290px;
+	margin-left: 23px;
+}
+
+.none {
+	margin-top: 0 !important;
+}
+
+.cta-short {
+	background-color: #ffcd0f;
+	padding: 0 5px;	
+}
+
+// FOR MY ULs
+
+.reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+// MAIN WIDTH
+
+.full-width{
+	width: 100%;
+}
+
+.content-width{
+	width: 1076px;
+	margin: 0 auto;
+}
+
+.title-width{
+	width: 708px;
+	border-top: dashed 1px #80726b;
+	border-bottom: dashed 1px #80726b; 
+}
+
+
+// HEADER
+
+.fixed {
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin: 0 auto;
+}
+
+
+// GRID
+
+.col1_1{
+	position: relative;
+	@extend .content-width;
+	margin-top: 30px;
+	height: auto;
+}
+
+.col1_2{
+	@extend .relative;
+	width: 520px;
+	margin-top: 30px;
+}
+
+.col1_3{
+	@extend .relative;
+	width: 335px;
+	margin-right: 34px;	
+}
+
+.news {
+	@extend .relative;
+	width: 152px !important;
+	height: auto;
+	margin-right: 32px;	
+}
+
+.blog {
+	@extend .relative;
+	width: 306px;
+	margin-right: 77px;
+}
+
+.col2_3{
+	@extend .relative;
+	width: 705px;
+}
+
+.half {
+	@extend .relative;
+	width: 520px;
+	height: auto;
+	margin-right: 32px;	
+}
+
+
+.row1{
+	@extend .relative;
+	width: 520px;
+	height: auto;
+}
+
+.row2{
+	@extend .relative;
+	margin-top: -3px;
+}
+
+
+.teach {
+	width: 430.391px !important;
+	margin: 0 53.797px 0 0;
+}
+
+.teach2 {
+	width: 538px !important;
+	margin-top: 0;
+}
+
+.about, .network, .contact {	
+	width: 336px;
+	margin-right: 32px;
+}
+
+.about-h2{
+	margin-bottom: 28px;
+}
+
+
+.cta-ribbon {
+	@extend .center-text;
+}
+
+.cta-long {
+	@extend .center-text;
+	display: inline-block;
+	background-color: #ffce10;
+	position: relative;
+	width: 416px;
+	height: 50px;
+	padding: 14px 5px;
+	font-size: 20px;
+	line-height: 18px;
+}
+
+// zocial
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+// iconicfill 
+[class*="iconicfill-"]:before {
+  font-family: 'IconicFill', sans-serif;
+}
+
+
+// FOR MY IMAGES
+
+.img {
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.project {
+	width: 335px;
+	height: 230px;
+}
+
+.star {
+	width: 14px;
+	height: 14px;	
+}
+
+.news-img {
+	width: 152px;
+	height: 151px;
+	margin-bottom: 20px;
+}
+
+.blog-img {
+	width: 306px;
+	height: 234px;	
+}
+
+.network-img {
+	width: 340px;
+	height: 50px;	
+}
+
+.contact-img {
+	width: 334px;
+	height: 240px;
+	margin-bottom: 22px;	
+}
+
+.extra-margin {
+	margin-bottom: 40px !important;
+}
+
+.fa .fa-star{
+	width: 12px;
+	height: 12px;
+}
+
+.last{
+	margin-right: 0;	
+}
+
+
+.zocial-twitter, .zocial-facebook {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: $bg-color3;
+	color: $txt-color6;
+	padding: 6px;
+	font-size: 10px;
+}
+
+
+.zocial-facebook {
+	padding: 4px 8px 4px 4px;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
