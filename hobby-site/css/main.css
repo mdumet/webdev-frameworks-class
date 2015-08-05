@@ -1,0 +1,258 @@
+/* _________________________________________
+CONTENT:	ProjectName, Stylesheet Purpose
+AUTHOR:		Your Name
+____________________________________________
+
+TABLE OF CONTENTS:
+
+1. imports
+2. html root
+3. typograpy
+4. content
+
+========================================================== */
+/* 1. IMPORTS  =========================================== */
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+section {
+  position: relative;
+  -webkit-transition: all 1.25s ease-in-out; }
+
+.hobby section {
+  float: left;
+  height: 48.5%;
+  width: 48.5%;
+  margin: 1%; }
+
+.col_a, .col_b, .col_c, .col_d {
+  background: #202020; }
+
+.hobby .col_1 {
+  position: relative;
+  float: left;
+  width: 98%;
+  height: auto;
+  margin: 1%; }
+
+.hobby .banner {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-bottom: 1%;
+  background-color: #000; }
+
+.hobby .content {
+  position: relative;
+  height: auto;
+  left: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 15%; }
+
+.hobby .col_a, .hobby .col_c {
+  margin-right: .5%; }
+
+.hobby .col_a, .hobby .col_b {
+  margin-bottom: .5%; }
+
+.hobby .col_c, .hobby .col_d {
+  margin-top: .5%; }
+
+.hobby .col_b, .hobby .col_d {
+  margin-left: .5%; }
+
+footer {
+  position: fixed;
+  float: left;
+  width: 100%;
+  height: auto;
+  background-color: #202020;
+  bottom: 0;
+  margin-top: 20%;
+  z-index: -1; }
+
+.foot {
+  margin: 30px 10% !important; }
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px !important; }
+
+h1 a {
+  float: left;
+  text-indent: -9999px;
+  overflow: hidden;
+  left: 50%;
+  top: 0;
+  position: relative; }
+
+img {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  border: solid 2px #202020; }
+
+p:hover {
+  color: #62edfd; }
+
+.center-text, h1, h2, h3, p, .foot {
+  text-align: center; }
+
+.large-text, h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px; }
+
+.medium-text, h3, .foot {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px; }
+
+.small-text, p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.center {
+  margin: 0 auto;
+  text-align: center; }
+
+@media screen and (max-width: 767px) {
+  .hobby .col_a, .hobby .col_b, .hobby .col_c, .hobby .col_d {
+    float: left;
+    height: 57.5%;
+    width: 98%; }
+  .hobby .col_a {
+    margin: 0% 1% .5% 1%; }
+  .hobby .col_b {
+    margin: .5% 1% .5% 1%; }
+  .hobby .col_c {
+    margin: .5% 1% .5% 1%; }
+  .hobby .col_d {
+    margin: .5% 1% 1% 1%; }
+  h1 a {
+    background: url(../img/banner_sm.png) no-repeat;
+    width: 160px;
+    height: 65px;
+    margin-left: -80px; }
+  .hobby .content {
+    width: 100%;
+    min-width: 320px;
+    max-width: 320px;
+    margin-left: -160px;
+    margin-bottom: 50% !important; }
+  h2 {
+    font-size: 20px !important;
+    line-height: 36px !important; }
+  h3 {
+    font-size: 16px;
+    line-height: 30px; } }
+
+@media screen and (min-width: 768px) {
+  .hobby .col_a, .hobby .col_b, .hobby .col_c, .hobby .col_d {
+    float: left;
+    height: 57.5%;
+    width: 48.5%; }
+  .hobby .col_b {
+    margin: 1% .5% .5% 1%; }
+  .hobby .col_b {
+    margin: 1% 1% .5% .5%; }
+  .hobby .col_c {
+    margin: .5% .5% 1% 1%; }
+  .hobby .col_d {
+    margin: .5% 1% 1% .5%; }
+  h1 a {
+    background: url(../img/banner_md.png) no-repeat;
+    width: 320px;
+    height: 130px;
+    margin-left: -160px; }
+  .hobby .content {
+    width: 100%;
+    min-width: 768px;
+    max-width: 768px;
+    margin-left: -384px;
+    margin-bottom: 20% !important; } }
+
+@media screen and (min-width: 980px) {
+  .hobby .col_a {
+    float: left;
+    height: 98%;
+    width: 23.75%;
+    margin: 1%; }
+  .hobby .col_b {
+    float: left;
+    height: 98%;
+    width: 23.75%;
+    margin: 1%;
+    margin-left: 0%; }
+  .hobby .col_c {
+    float: left;
+    height: 98%;
+    width: 23.75%;
+    margin: 1%;
+    margin-left: 0%; }
+  .hobby .col_d {
+    float: left;
+    height: 98%;
+    width: 23.75%;
+    margin: 1%;
+    margin-left: 0%; }
+  h1 a {
+    background: url(../img/banner_lg.png) no-repeat;
+    width: 768px;
+    height: 313px;
+    margin-left: -384px;
+    margin-top: -20px; }
+  .hobby .content {
+    width: 100%;
+    min-width: 980px;
+    max-width: 980px;
+    margin-left: -490px; }
+  img {
+    -webkit-filter: grayscale(1); }
+  img:hover {
+    -webkit-filter: grayscale(0); } }
+
+/* 2. HTML ROOT  ========================================= */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+html, body {
+  width: 100%; }
+
+/* 3. TYPOGRAPHY  ======================================== */
+h2 {
+  font-family: "Merriweather", serif;
+  color: #404040;
+  margin: 30px auto;
+  text-align: center; }
+
+h3 {
+  font-family: "Merriweather", serif;
+  color: #404040;
+  margin: 30px auto;
+  text-align: center; }
+
+p {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin: 20px auto; }
+
+.foot {
+  font-family: "Oswald", sans-serif;
+  color: #62edfd;
+  letter-spacing: 1px;
+  margin: 20px auto; }
+
+.content {
+  background-color: #ffffff; }

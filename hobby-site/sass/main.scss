@@ -1,0 +1,124 @@
+/* _________________________________________
+CONTENT:	ProjectName, Stylesheet Purpose
+AUTHOR:		Your Name
+____________________________________________
+
+TABLE OF CONTENTS:
+
+1. imports
+2. html root
+3. typograpy
+4. content
+
+========================================================== */
+
+/* 1. IMPORTS  =========================================== */
+
+
+@import "_variables";
+@import "_utils";
+@import "_screens";
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+
+/* 2. HTML ROOT  ========================================= */
+
+*{ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+html, body {
+	width: 100%;
+}
+
+body {
+	// color: $txt-color1;
+	// background-image: url(../img/bg-tile.png);
+}
+
+/* 3. TYPOGRAPHY  ======================================== */
+
+h2{
+	@extend .center-text;
+	@extend .large-text;
+	font-family: $txt-font1;
+	color: $txt-color1;
+	margin: 30px auto;
+	text-align: center;
+}
+
+h3{
+	@extend .center-text;
+	@extend .medium-text;
+	font-family: $txt-font1;
+	color: $txt-color1;
+	margin: 30px auto;
+	text-align: center;
+}
+
+p{
+	@extend .center-text;
+	@extend .small-text;
+	font-family: $txt-font2;
+	color: $txt-color2;
+	letter-spacing: 1px;
+	margin: 20px auto;
+}
+
+
+.foot{
+	@extend .center-text;
+	@extend .medium-text;
+	font-family: $txt-font2;
+	color: $txt-color3;
+	letter-spacing: 1px;
+	margin: 20px auto;
+}
+
+
+.content{
+	background-color: $bg-color1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

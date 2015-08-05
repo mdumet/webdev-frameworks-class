@@ -1,0 +1,135 @@
+
+//Grid System
+
+section{
+	position: relative;
+	-webkit-transition: all 1.25s ease-in-out;
+}
+
+.hobby section{
+	float: left;
+	height: 48.5%;
+	width: 48.5%;
+	margin: 1%;
+}
+
+.col_a, .col_b, .col_c, .col_d{
+	background: $bg-color2;
+}
+
+
+.hobby .col_1{
+	position: relative;
+	float: left;
+	width: 98%;
+	height: auto;
+	margin: 1%;
+}
+
+.hobby .banner{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 0; 
+	margin-bottom: 1%;
+	background-color: #000;
+}
+
+.hobby .content{
+	position: relative;
+	height: auto;
+	left: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 15%;
+}
+
+.hobby .col_a, .hobby .col_c{
+	margin-right: .5%;
+}
+
+.hobby .col_a, .hobby .col_b{
+	margin-bottom: .5%;
+}
+
+.hobby .col_c, .hobby .col_d{
+	margin-top: .5%;
+}
+
+.hobby .col_b, .hobby .col_d{
+	margin-left: .5%;
+}
+
+footer{
+	position: fixed;
+	float: left;
+	width: 100%;
+	height: auto;
+	background-color: $bg-color2;
+	bottom: 0;
+	margin-top: 20%;
+	z-index: -1;
+}
+
+.foot{
+	margin: 30px 10% !important;	
+}
+
+//CONTENT
+
+h1{
+	@extend .center-text;
+	margin-top: 0;
+	margin-bottom: 20px !important;
+}
+
+h1 a{
+	float: left;
+	text-indent: -9999px;
+	overflow: hidden;
+	left: 50%;
+	top: 0;
+	position: relative;
+}
+
+
+img{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	border: solid 2px #202020;
+}
+
+
+p:hover{
+	color: $txt-color3;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.large-text{
+	font-size: $txt-size1;
+	font-weight: $txt-weight-normal;
+	line-height: $txt-height1;
+}
+
+.medium-text{
+	font-size: $txt-size2;
+	font-weight: $txt-weight-normal;
+	line-height: $txt-height2;	
+}
+
+.small-text{
+	font-size: $txt-size3;
+	font-weight: $txt-weight-bold;
+	line-height: $txt-height3;
+}
+
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}

@@ -1,0 +1,210 @@
+
+// MEDIA QUERIES FOR THREE SCREEN SIZES
+
+
+// ==============================//
+//     MOBILE DEVICES (320PX)    //
+// ==============================//
+
+@media screen and (max-width: 767px){
+
+//====================== GRID SYSTEM ==================//
+
+.hobby .col_a, .hobby .col_b, .hobby .col_c, .hobby .col_d{
+	float: left;
+	height: 57.5%;
+	width: 98%;
+}
+
+.hobby .col_a{
+	margin: 0% 1% .5% 1%;
+}
+
+.hobby .col_b{
+	margin: .5% 1% .5% 1%;
+}
+
+.hobby .col_c{
+	margin: .5% 1% .5% 1%;
+}
+
+.hobby .col_d{
+	margin: .5% 1% 1% 1%;
+}
+
+
+//====================== CONTENT ==================//
+
+h1 a{
+	background:$img-banner-sm no-repeat;
+	width: 160px;
+	height: 65px;
+	margin-left: -80px;
+}
+
+.hobby .content{
+	width:100%;
+	min-width: 320px;
+	max-width: 320px;
+	margin-left: -160px;
+	margin-bottom: 50% !important;
+}
+
+h2{
+	font-size: $txt-size2 !important;
+	line-height: $txt-height2 !important;
+	// margin-bottom: 20px !important;
+}
+
+h3{
+	font-size: $txt-size3;
+	line-height: $txt-height3;
+}
+
+
+}
+
+
+
+// ======================//
+//     TABLETS (768PX)   //
+// ======================//
+
+@media screen and (min-width: 768px){
+
+//====================== GRID SYSTEM ==================//
+
+.hobby .col_a, .hobby .col_b, .hobby .col_c, .hobby .col_d{
+	float: left;
+	height: 57.5%;
+	width: 48.5%;
+}
+
+.hobby .col_b{
+	margin: 1% .5% .5% 1%;
+}
+
+.hobby .col_b{
+	margin: 1% 1% .5% .5%;
+}
+
+.hobby .col_c{
+	margin: .5% .5% 1% 1%;
+}
+
+.hobby .col_d{
+	margin: .5% 1% 1% .5%;
+}
+
+
+//====================== CONTENT ==================//
+
+h1 a{
+	background: $img-banner-md no-repeat;
+	width: 320px;
+	height: 130px;
+	margin-left: -160px;
+}
+
+.hobby .content{
+	width:100%;
+	min-width: 768px;
+	max-width: 768px;
+	margin-left: -384px;
+	margin-bottom: 20% !important;
+}
+
+
+}
+
+
+
+// ==============================//
+//         DESKTOPS (980PX)      //
+// ==============================//
+
+
+@media screen and (min-width: 980px){
+
+//====================== GRID SYSTEM ==================//
+
+.hobby .col_a{
+	float: left;
+	height: 98%;
+	width: 23.75%;
+	margin: 1%;
+}
+
+.hobby .col_b{
+	float: left;
+	height: 98%;
+	width: 23.75%;
+	margin: 1%;
+	margin-left: 0%;
+}
+
+.hobby .col_c{
+	float: left;
+	height: 98%;
+	width: 23.75%;
+	margin: 1%;
+	margin-left: 0%;
+}
+
+.hobby .col_d{
+	float: left;
+	height: 98%;
+	width: 23.75%;
+	margin: 1%;
+	margin-left: 0%;
+}
+
+
+//====================== CONTENT ==================//
+
+h1 a{
+	background: $img-banner-lg no-repeat;
+	width: 768px;
+	height: 313px;
+	margin-left: -384px;
+	margin-top: -20px;
+}
+
+.hobby .content{
+	width:100%;
+	min-width: 980px;
+	max-width: 980px;
+	margin-left: -490px;
+}
+
+img {
+	-webkit-filter: grayscale(1);
+}
+
+img:hover{
+	-webkit-filter: grayscale(0);
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
