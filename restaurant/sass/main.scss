@@ -1,0 +1,1168 @@
+/* _________________________________________
+CONTENT:	ProjectName, Stylesheet Purpose
+AUTHOR:		Your Name
+____________________________________________
+
+TABLE OF CONTENTS:
+
+1. imports
+2. html root
+3. typograpy
+4. content
+
+========================================================== */
+
+/* 1. IMPORTS  =========================================== */
+
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import "_variables";
+@import "_utils";
+
+
+/* 2. HTML ROOT  ========================================= */
+
+*{ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+html, body {
+	width: 100%;
+}
+
+/* 3. Typography  ========================================= */
+
+body {
+	background-color: $bg-color-dark-red;
+	font-family: 'Lato', sans-serif !important;
+	font-size: $txt-size-p-sm;
+}
+
+.navbar-nav {
+	li{
+		a {
+		    line-height: 20px;
+		    font-size: $txt-size-nav-sm;
+		}
+	}
+}
+
+h1 {
+	@extend .center-text;
+	font-size: $txt-size-h1-sm;
+	color: $txt-color-white;
+	background-color: $bg-color-bright-red;
+	width: 100%;
+	height: 90px;
+	padding-top: 30px;
+	font-weight: $txt-extra-bold;
+	letter-spacing: 2px;
+	word-spacing: 6px;
+}
+
+.content > .container-fluid > h2 {
+		@extend .center-text;
+		width: 90px;
+		font-size: $txt-size-h2-sm;
+		font-weight: $txt-bold;
+		letter-spacing: 2px;
+		word-spacing: 6px;
+		color: $bg-color-dark-gray !important;
+		border-bottom: 2px solid $bg-color-dark-red;
+}
+
+
+footer {
+	@extend .center-text;
+	font-size: $txt-size-p-sm;
+	color: $txt-color-white;
+	padding-top: 50px;
+}
+
+
+/* 4. Content  ========================================= */
+
+
+// =====================================
+// MOBILE (320PX) SCREEN-SIZE
+// =====================================
+
+// HEADER
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	z-index: 9999;
+	border-bottom: 2px solid #820000;
+}
+
+.container-fluid {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.navbar-header {
+	width: 100%;
+	margin: 0 !important;
+}
+
+.navbar-brand{
+	img{
+		position: absolute;
+		left: 10%;
+		width: auto;
+		height: 50px;
+		margin-left: -15px;
+	}
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    padding: 2px 2px;
+    background-color: $bg-color-dark-gray;
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: $bg-color-dark-red;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+   	margin-top: 5px;
+}
+
+.navbar-collapse {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+#bs-example-navbar-collapse-1 {
+	width: 100%;
+    background-color: $bg-color-dark-red;
+    margin-top: 29px;
+
+}
+
+
+// Nav Menu
+
+.navbar-nav {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	li{
+		a {
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		    border-top: 1px solid $bg-color-dark-gray;
+		}
+
+		a:hover {
+			border-bottom: 2px solid $bg-color-dark-red;
+		}
+	}
+
+	li:first-child {
+		a {
+		    border-top: none;
+		}
+	}
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: $txt-color-white;	
+}
+
+
+// HERO IMAGE
+
+.banner-sm {
+	@extend .relative;
+	width: 100%;
+	height: 200px;
+	margin-top: 60px;
+	background-image: $img-banner-sm;
+}
+
+
+
+// FIRST SECTION
+
+.content {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 0px;
+	background-color: #fff;
+}
+
+
+// SECOND HERO IMAGE
+
+
+.banner2-sm {
+	@extend .relative;
+	width: 100%;
+	height: 200px;
+	margin-top: 0px;
+	background-image: $img-banner2-sm;
+	margin-bottom: 35px;
+	background-position: 50% 0;
+}
+
+
+.content >.container-fluid {
+	width: 90%;
+	margin: 30px auto 10px;
+}
+
+// MENU SECTION 
+
+.menu-list {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	margin-bottom: 500px !important;
+
+	.menu-left {
+		@extend .relative;
+		width: 100%;
+		height: auto;
+	}
+
+		.menu-category{
+			@extend .relative;
+			width: 100%;
+			text-align: left;
+			font-size: $txt-size-menu-cat-sm;
+			font-weight: $txt-extra-bold;
+			letter-spacing: 2px;
+			word-spacing: 6px;
+			color: $bg-color-dark-red;
+			margin: 3px auto;
+			padding: 0;	
+			line-height: 18px;
+		}			
+
+		.menu-category:first-child{
+			width: 90%;
+		}
+
+
+		.menu-dish{
+			@extend .relative;
+			width: 60%;
+			text-align: left;
+			@extend .menu-item-bold-sm;
+			line-height: 18px;
+			margin: 5px auto;
+			padding: 0;	
+		} 
+
+		.price{
+			position: relative;
+			float: right;
+			width: 40%;
+			text-align: right;
+			@extend .menu-item-bold-sm;
+			margin: 0 auto;
+			padding: 0;
+		}
+
+		.lunch-price{
+			position: relative;
+			float: right;
+			width: 10%;
+			text-align: right;
+			@extend .menu-item-bold-sm;
+			margin: 0 auto;
+			padding: 0;
+		}
+
+		.lunch-menu-description{
+			float: left;
+			width: 90%;
+			font-size: $txt-size-menu-description-sm;
+			@extend .menu-item-normal-sm;
+			margin: 0 auto 10px;
+			padding: 0;
+			line-height: 20px;
+		}
+
+		.menu-description {
+			float: left;
+			width: 100%;
+			font-size: $txt-size-menu-description-sm;
+			@extend .menu-item-normal-sm;
+			margin: 0 auto 10px;
+			padding: 0;
+			line-height: 20px;
+		}
+
+
+		.note {
+			text-align: center;
+			float: left;
+			width: 100%;
+			margin-top: 20px;
+		}
+
+
+		.red-text {
+			color: $txt-color-red;
+		}
+	
+
+	.menu-right {
+		@extend .relative;
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+
+// MENU IMAGES
+
+.food-appetizer-img {
+	@extend .food-img;
+	background-image: $img-food-appetizer;
+}
+
+.food-dumpling-img {
+	@extend .food-img;
+	background-image: $img-food-dumpling;	
+}
+
+.food-soup-img {
+	@extend .food-img;
+	background-image: $img-food-soup;
+}
+
+.food-rice-img {
+	@extend .food-img;
+	background-image: $img-food-rice;
+}
+
+.food-noodles-img {
+	@extend .food-img;
+	background-image: $img-food-noodles;
+}
+
+.food-stirfry-img {
+	@extend .food-img;
+	background-image: $img-food-stirfry;
+}
+
+.food-entrees-img {
+	@extend .food-img;
+	background-image: $img-food-entrees;
+}
+
+// ABOUT SECTION
+
+.about-aja {
+	@extend .relative;
+	width: 100%;
+	height: auto;
+	background-color: $bg-color-dark-gray;
+
+	.about-img {
+		width: 100%;
+		height: 185px;
+		margin: 0 auto 50px;
+		background-image: $img-about;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.container-fluid {
+		width: 90%;
+		margin: 30px auto;
+
+		h2 {
+			@extend .center-text;
+			width: 90px;
+			font-size: $txt-size-h2-sm;
+			font-weight: $txt-bold;
+			letter-spacing: 2px;
+			word-spacing: 6px;
+			color: $txt-color-white;
+			border-bottom: 2px solid $txt-color-red;
+			margin-bottom: 50px;
+
+		}
+
+		p {
+			margin-top: 20px ;
+			color: $txt-color-white;
+			font-size: $txt-size-p-sm;
+			line-height: 24px;
+			word-spacing: 5px;
+
+		}
+
+	}
+
+}
+
+// LOCATION SECTION
+
+.location-aja {
+	@extend .relative;
+	width: 100%;
+	height: auto;
+	background-color: $bg-color-white;
+
+	.container-fluid {
+		width: 90%;
+		margin: 30px auto;
+
+		h2 {
+			@extend .center-text;
+			width: 110px;
+			font-size: $txt-size-h2-sm;
+			font-weight: $txt-bold;
+			letter-spacing: 2px;
+			word-spacing: 6px;
+			color: $txt-color-dark-gray;
+			border-bottom: 2px solid $txt-color-red;
+			margin-bottom: 50px;
+			margin-top: 20px;
+
+		}
+
+		.location-left {
+			@extend .relative;
+			width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+
+		.map-sm {
+			@extend .food-img;
+			height: 200px;
+			background-image: $img-location;
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+
+		.location-right {
+			@extend .relative;
+			width: 100%;
+			height: auto;
+			margin-bottom: 20px;			
+		}
+
+		p {
+			margin: 0 auto;
+			padding-left: 30px;
+			color: $txt-color-dark-gray;
+			font-size: $txt-size-p-sm;
+			line-height: 24px;
+			word-spacing: 4px;
+
+			.address-bold {
+				font-weight: $txt-extra-bold;
+			}
+
+		}
+
+	}
+
+}
+
+
+// RESERVATIONS SECTION
+
+.reservations-aja {
+	@extend .relative;
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+	background-color: $bg-color-bright-red;
+
+	.container-fluid {
+		width: 90%;
+		margin: 30px auto;
+
+		h2 {
+			@extend .center-text;
+			width: 170px;
+			font-size: $txt-size-h2-sm;
+			font-weight: $txt-bold;
+			letter-spacing: 2px;
+			word-spacing: 6px;
+			color: $txt-color-white;
+			border-bottom: 2px solid $bg-color-dark-gray;
+			margin-bottom: 50px;
+			margin-top: 20px;
+
+		}
+
+
+
+		.reservations-aja{
+			position: relative;
+			float: left;
+			width: 100%;
+			min-height: 430px;
+			background-color: #fff;	
+		}
+
+
+		.reservation-form {
+			width: 100%;
+			height: 350px;
+			margin: 50px auto;
+		}
+
+		.reservation-form-left {
+			position: relative;
+			float: left;
+			width: 100%;
+		}
+
+		.reservation-form-right {
+			position: relative;
+			float: left;
+			width: 100%;
+		}
+		
+		label {
+			color: $txt-color-white;
+			font-size: $txt-size-p-sm;
+		}
+
+		.guests {
+			color: $txt-color-white;
+			font-size: $txt-size-p-sm;
+			font-weight: $txt-bold;
+		}
+
+		.btn-default {
+			float: right;
+			min-width: 100px;
+			margin-top: 50px;
+			background-color: $bg-color-white;
+			color: $txt-color-red;
+		}
+	}
+}
+
+footer {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-height: 250px;
+	background-color: $bg-color-dark-gray;
+
+	.social-media {
+		margin-bottom: 40px;
+
+		.fa {
+			margin: 0 10px;
+			color: $txt-color-white;	
+		}
+		
+	}
+
+
+}
+
+
+
+
+
+// =====================================
+// TABLET (768PX) SCREEN-SIZE
+// =====================================
+
+
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+
+/* Typography  ========================================= */
+
+body {
+	font-size: $txt-size-p-md;
+}
+
+.navbar-nav {
+	li{
+		a {
+		    line-height: 20px;
+		    font-size: $txt-size-nav-md;
+		}
+	}
+}
+
+h1 {
+	font-size: $txt-size-h1-md;
+	width: 100%;
+	height: 90px;
+	padding-top: 30px;
+	font-weight: $txt-extra-bold;
+	letter-spacing: 2px;
+	word-spacing: 6px;
+}
+
+.content > .container-fluid > h2 {
+		width: 90px;
+		font-size: $txt-size-h2-md;
+		letter-spacing: 2px;
+		word-spacing: 6px;
+}
+
+
+footer {
+	font-size: $txt-size-p-md;
+	padding-top: 50px;
+}
+
+
+/* Content  ========================================= */
+
+	.navbar {
+		height: 100px;
+	
+		.container-fluid {
+			width: 100%;
+			max-width: 768px;
+		}
+	}
+
+	.navbar-brand{
+		img{
+			position: absolute;
+			left: 10%;
+			width: auto;
+			height: 75px;
+		}
+	}
+
+    .navbar-toggle {
+	    display: block !important;
+	    position: relative;
+	    float: right;
+	    margin-right: 25px;
+	    margin-top: 30px;
+	    margin-bottom: 0;
+	    padding: 2px 2px;
+	}
+
+
+	.navbar-toggle .icon-bar {
+	    display: block;
+	    width: 40px;
+	    height: 5px;
+	    border-radius: 1px;
+	}
+
+	.navbar-toggle .icon-bar + .icon-bar {
+    	margin-top: 7px;
+	}
+
+
+	#bs-example-navbar-collapse-1 {
+		position: relative;
+		float: left;
+		width: 100%;
+	    margin-top: 37px;
+	    border: none;
+	}
+
+	.navbar-nav {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	    border: none;
+
+		li {
+		    position: relative;
+		    float: left;
+		    width: 100%;
+		    display: block;
+		    text-align: center;
+		}
+	}
+
+
+	.banner-md {
+		width: 100%;
+		height: 270px;
+		margin-top: 100px;
+		background-image: $img-banner-md;
+	}
+
+
+	.banner2-md {
+		width: 100%;
+		height: 300px;
+		margin-top: 0px;
+		background-image: $img-banner2-md;
+		background-size: cover;
+		background-position: center;
+	}
+
+
+
+// Menu SECTION
+
+
+	.menu-list {
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+		margin-bottom: 500px !important;
+
+
+		.menu-left {
+			position: relative;
+			width: 48%;
+			height: auto;
+			padding-right: 2%;
+		}
+
+		.menu-right {
+			position: relative;
+			float: left;
+			width: 48%;
+			height: auto;
+			padding-left: 2%;
+			border-left: 1px solid $bg-color-dark-red;
+		}
+	}
+
+
+
+// RESERVATIONS SECTION
+
+
+
+
+.reservations-aja {
+	width: 100%;
+	min-height: 500px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+	.container-fluid {
+		width: 90%;
+		margin: 30px auto 0;
+
+		h2 {
+			width: 190px;
+			font-size: $txt-size-h2-md;
+			font-weight: $txt-bold;
+			letter-spacing: 2px;
+			word-spacing: 6px;
+			color: $txt-color-white;
+			border-bottom: 2px solid $bg-color-dark-gray;
+			margin-bottom: 50px;
+			margin-top: 20px;
+
+		}
+
+		.reservation-form {
+			width: 80%;
+			height: 350px;
+			margin: 50px auto;
+		}
+
+		.reservation-form-left {
+			position: relative;
+			float: left;
+			width: 45%;
+			margin: 0 5%;
+		}
+
+		.reservation-form-right {
+			position: relative;
+			float: left;
+			width: 35%;
+			margin: 0 5%;
+		}
+		
+		label {
+			color: $txt-color-white;
+			font-size: $txt-size-p-md;
+			font-weight: $txt-bold;
+		}
+
+		.guests {
+			color: $txt-color-white;
+			font-size: $txt-size-p-md;
+			font-weight: $txt-bold;
+		}
+
+		.btn-default {
+			float: right;
+			min-width: 100px;
+			margin-top: 50px;
+			background-color: $bg-color-white;
+			color: $txt-color-red;
+		}
+	}
+}
+
+	footer {
+		position: relative;
+		float: left;
+		width: 100%;
+		min-height: 250px;
+		background-color: $bg-color-dark-gray;
+
+		.social-media {
+			margin-bottom: 40px;
+
+			.fa {
+				margin: 0 10px;
+				color: $txt-color-white;	
+			}
+		}
+	}
+
+
+}
+
+
+ @media (max-width: 768px) {
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+	.navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+
+ }
+
+
+
+// =====================================
+// DESKTOP (min-769PX) SCREEN-SIZE
+// =====================================
+
+
+
+
+
+@media only screen and (min-width: 769px) {
+	.navbar {
+		height: 150px;
+	}
+
+
+	.container-fluid {
+		width: 100%;
+		max-width: 1024px;
+	}
+
+	.navbar-header {
+		width: 48%;
+	}
+
+	.navbar-brand{
+		img{
+			position: relative;
+			left: 5%;
+			width: auto;
+			height: 100px;
+			margin-top: 15px;
+			margin-left: 15px !important;
+		}
+	}
+
+	#bs-example-navbar-collapse-1 {
+	    position: relative;
+	    float: right;
+	    width: auto;
+	    background-color: #222222;
+	    margin-top: 50px;
+	}
+
+	.navbar.shrink{
+  		height: 100px;
+
+		.navbar-brand{
+			img{
+				position: relative;
+				left: 5%;
+				width: auto;
+				height: 65px;
+				margin-top: 5px;
+				margin-left: 15px !important;
+			}
+		}
+
+		#bs-example-navbar-collapse-1 {
+		    margin-top: 20px;
+		}
+
+
+	}
+
+
+
+
+	.navbar-nav {
+		position: relative;
+		float: right;
+	    margin-right: 3%;
+
+	    a {
+	    	font-size: 16px;
+	    }
+	}
+
+
+	.banner-lg {
+		position: relative;
+		float: left;
+		width: 100%;
+		height: 440px;
+		margin-top: 150px;
+		background-image: $img-banner-lg;
+		background-position: 50% 100px;
+  		background-attachment: fixed;
+  		background-size: 100% auto;
+	}
+
+
+
+.content {
+	
+	h1 {
+		width: 100%;
+		height: 90px;
+		padding-top: 25px;
+		font-size: 36px;
+		letter-spacing: 2px;
+		word-spacing: 6px;
+	}
+
+	h1.hide {
+		opacity: 0;
+	}
+
+	.banner2-lg {
+		// @extend .food-img;
+		width: 100%;
+		height: 580px;
+		margin-top: 0;
+		margin-bottom: 40px;
+		background-image: $img-banner2-lg;
+		background-attachment: fixed;
+		background-position: 50% -10px;
+		// background-size: cover;
+	}
+
+	.container-fluid {
+		width: 90%;
+		margin: 30px auto;
+
+		h2 {
+			width: 100px;
+			font-size: 30px;
+		}
+
+	}
+
+
+}
+
+
+.menu-list {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	margin-bottom: 500px !important;
+
+
+	.menu-left {
+		position: relative;
+		width: 48%;
+		height: auto;
+		padding-right: 2%;
+	}
+
+	.menu-right {
+		position: relative;
+		float: left;
+		width: 48%;
+		height: auto;
+		padding-left: 2%;
+		border-left: 1px solid #b92e2f;
+	}
+}
+
+.about-aja {
+	padding-bottom: 30px;
+
+	.container-fluid {
+
+		h2 {
+			width: 110px;
+			font-size: 30px;
+			margin-bottom: 40px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 26px;
+		}
+
+	}	
+
+	.about-img {
+		width: 100%;
+		height: 350px;
+		// margin: 0 auto 50px;
+		background-image: $img-about;
+		background-position: center;
+		background-size: cover;
+	}
+
+}
+
+
+
+	// LOCATION SECTION
+
+	.location-aja {
+		width: 100%;
+		height: auto;
+		background-color: $bg-color-white;
+
+		.container-fluid {
+			width: 90%;
+			margin: 30px auto;
+
+			h2 {
+				width: 140px;
+				font-size: $txt-size-h2-lg;
+			}
+
+			.map-lg {
+				height: 350px;
+				margin-top: 0;
+				margin-bottom: 40px;
+				background-image: $img-location;
+			}
+
+		}
+
+	}
+
+
+// RESERVATIONS SECTION
+
+
+
+
+.reservations-aja {
+	width: 100%;
+	min-height: 500px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+	.container-fluid {
+		width: 90%;
+		margin: 30px auto 0;
+
+		h2 {
+			width: 210px;
+			font-size: $txt-size-h2-lg;
+			font-weight: $txt-bold;
+			letter-spacing: 2px;
+			word-spacing: 6px;
+			color: $txt-color-white;
+			border-bottom: 2px solid $bg-color-dark-gray;
+			margin-bottom: 50px;
+			margin-top: 20px;
+
+		}
+
+		.reservation-form {
+			width: 80%;
+			height: 350px;
+			margin: 50px auto;
+		}
+
+		.reservation-form-left {
+			position: relative;
+			float: left;
+			width: 45%;
+			margin: 0 5%;
+		}
+
+		.reservation-form-right {
+			position: relative;
+			float: left;
+			width: 35%;
+			margin: 0 5%;
+		}
+		
+
+	}
+}
+
+	footer {
+		position: relative;
+		float: left;
+		width: 100%;
+		min-height: 250px;
+		background-color: $bg-color-dark-gray;
+
+		.social-media {
+			margin-bottom: 40px;
+
+			.fa {
+				margin: 0 10px;
+				color: $txt-color-white;	
+			}
+		}
+	}
+
+
+}
+
+
+
+
+
