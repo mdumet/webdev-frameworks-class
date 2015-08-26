@@ -36,6 +36,16 @@ h1 {
   font-weight: 500;
 }
 
+.visit {
+  width: 100%;
+}
+
+.card .card-title {
+  font-weight: bold;
+}
+
+
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -44,17 +54,29 @@ h1 {
   #index-banner .section {
     top: 10%;
   }
+  .section.visit-section {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
+  .section.visit-section {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width : 993px) {
   .icon-block {
     min-height: 695.969px;
+  }
+  .section.visit-section {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
