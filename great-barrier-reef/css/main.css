@@ -44,7 +44,61 @@ h1 {
   font-weight: bold;
 }
 
-
+  /* label color */
+   .input-field label {
+     color: #00e5ff;
+   }
+   /* name label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #b2ebf2;
+   }
+   /* email label focus color */
+   .input-field input[type=email]:focus + label {
+     color: #b2ebf2;
+   }
+   /* name label underline color */
+   .input-field input[type=text] {
+     border-bottom: 1px solid #00e5ff;
+     box-shadow: 0 1px 0 0 #00e5ff;
+   }
+   /* name label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #b2ebf2;
+     box-shadow: 0 1px 0 0 #b2ebf2;
+   }
+   /* email label underline color */
+   .input-field input[type=email] {
+     border-bottom: 1px solid #00e5ff;
+     box-shadow: 0 1px 0 0 #00e5ff;
+   }
+   /* email label underline focus color */
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #b2ebf2;
+     box-shadow: 0 1px 0 0 #b2ebf2;
+   }
+   /* email invalid color */
+   .input-field input[type=email].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 red;
+   }
+   /* name valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #00e5ff;
+     box-shadow: 0 1px 0 0 #00e5ff;
+   }
+   /* name invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid red;
+     box-shadow: 0 1px 0 0 red;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix {
+     color: #00e5ff;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #b2ebf2;
+   }
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
