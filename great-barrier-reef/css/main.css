@@ -72,11 +72,15 @@ h1 {
 
 @media only screen and (min-width : 993px) {
   .icon-block {
-    min-height: 695.969px;
+    /*min-height: 695.969px;*/
   }
   .section.visit-section {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .row .col.l8 {
+    margin: 0 16.66666666666667%;
   }
 }
 
